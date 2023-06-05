@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/HtmlElements">  -->
+    <title>Elementi dell'HTML</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka&family=Monoton&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            width: auto;
+        }
+
+
+        aside {
+            display: block;
+            overflow: scroll;
+            float: inline-start;
+            flex-direction: column;
+            background-color: darksalmon;
+            padding: 10px 20px 5px 0px;
+        }
+
+
+
+        #footer-side {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            position: absolute;
+
+        }
+
+        #logo {
+            font-family: 'Monoton', cursive;
+            font-size: 50px;
+            display: flex;
+            width: fit-content;
+            background-color: rgb(242, 248, 160);
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            float: right;
+            justify-content: right;
+            background-color: rgb(242, 248, 160);
+            color: black;
+            width: 100%;
+            padding-right: 20px;
+        }
+
+        header {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html"> HTML</a> </div>
+        <nav>
+            <menu>
+
+                <span><button> Cerca nel sito </button><input type="search"> </span>
+            </menu>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <aside>
+            <ul>
+                <li> <a href="gallery.html"> Elementi Media </a> </li>
+                <li> <a href="form.html"> Form ed Input </a></li>
+            </ul>
+        </aside>
+
+        <div class="container">
+
+            <div class="data-form">
+                <h3>Inserisci i tuoi dati </h3>
+
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Inserisci i tuoi dati:</legend>
+                        <label for="fname">Nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Cognome:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="sex"> Sesso:</label><br>
+                        <input type="radio" id="Msex" name="sex" value="M">
+                        <label for="M">M</label><br>
+                        <input type="radio" id="Fsex" name="sex" value="F">
+                        <label for="M">F</label><br><br><br>
+                        <label for="birthday">Data di nascita:</label>
+                        <input type="date" id="birthday" name="birthday"><br><br>
+
+
+                        <label for="job">Lavoro attuale:</label>
+
+                        <select id="job">
+                            <option value="operaio">Operaio</option>
+                            <option value="PI">Partita Iva</option>
+                            <option value="Studente">Studente </option>
+                            <option value="Disoccupato">Disoccupato</option>
+                        </select><br><br>
+                        <form >Altezza cm <br> 
+                            <input type="range" id="height" value="200"> 
+                            <output name="x" for="a b"></output>
+                            </form> <br> <br>
+
+                        <label for="sendcomment"> Scrivi un Commento </label><br><br>
+                        <textarea> Scrivi qui... </textarea><br><br>
+                        <input type="submit" value="Submit">
+                        <br> <br>
+                        <label for="upload">Upload progress:</label>
+                        <progress id="upload" value="15" max="100"> 15% </progress>
+
+                    </fieldset>
+                </form>
+            </div>
+
+            
+
+            <div id="footer-side">
+                <footer>
+                    <address> Via Torino 456r, Genova 16166 Ge </address>
+                    <p> Copiright &#0169 2023 </p>
+                </footer>
+            </div>
+</body>
+
+</html>

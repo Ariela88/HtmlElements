@@ -15,22 +15,48 @@
         rel="stylesheet">
 
     <style>
+        body {
+            height: 100%;
+            width: auto;
+        }
+
         aside {
             float: left;
             overflow: scroll;
-            height: 1000px;
-            background-color: aquamarine;
+            height: 2000px;
+            display: block;
+
+            background-color: darksalmon;
             padding: 10px 20px 5px 0px;
         }
 
         .container {
             display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: left;
         }
 
-        footer {
+        #footer-side {
             background-color: black;
             color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            position: absolute;
+
         }
+
+        /* .card {
+            display: flex;
+            overflow: scroll;
+           
+            flex-direction: column;
+            justify-content:right
+        } */
 
         #logo {
             font-family: 'Monoton', cursive;
@@ -59,7 +85,19 @@
             display: flex;
         }
 
-        figure {display: flex;float: right;flex-direction: column;}
+        /* figure {
+            display: flex;
+            float: right;
+            flex-direction: column;
+           
+        }
+        .cardfigure {
+            display: flex;
+            overflow: scroll;
+            float: right;
+            justify-content: space-between;
+            flex-direction: column;
+        } */
     </style>
 </head>
 
@@ -69,7 +107,9 @@
         <nav>
             <menu>
 
-                <span><button> Cerca nel sito </button><input type="search"> </span>
+                <span><button> Cerca nel sito </button><input type="search"> </span><br><br>
+                <span style="text-align: right;"> Ora e Data Creazione sito <time>11:09 </time> del 05/06/2023</span>
+
             </menu>
         </nav>
     </header>
@@ -80,83 +120,158 @@
 
             <aside>
                 <ul>
-                    <li> Gallery </li>
-                    <li> Notizie Attuali </li>
+                    <li> <a href="gallery.html"> Elementi Media </a> </li>
+                    <li> <a href="form.html"> Form ed Input </a></li>
                 </ul>
             </aside>
 
-            <h1> Utilizzare gli Elementi in HTML</h1>
+            <h1> Utilizzare gli<sub> Elementi</sub> in <sup> HTML</sup></h1>
             <h3> Elementi di base </h3>
 
             <div class="card">
-                <h3> Articolo Html </h3>
+                <h3> Il ruolo del SEO </h3>
 
                 <article>
                     <div id="seocard">
                         <blockquote cite="https://www.digital4.biz/marketing/seo-specialist-che-cosa-fa/">
-                            Un <abbr> SEO </abbr> Specialist (dove SEO sta per Search Engine Optimization) è uno
+                            Un <dfn> <abbr title="Search Engine Optimization"> SEO </abbr></dfn> Specialist è uno
                             specialista del
                             Digital Marketing con una specializzazione verticale nella cosiddetta <br> <q>
                                 ottimizzazione per i
                                 motori di ricerca </q><br> Questa attività è diventata ormai fondamentale nelle
-                            strategie
-                            digitali
-                            sia B2B che B2C.
+                            strategie digitali sia <strong> B2B </strong> che<b> B2C.</b>
                         </blockquote>
                     </div>
-                    <figure>
-                        <img src="img/figure.png" alt="seo" id="seoimg" style="
+                    <div class="cardfigure">
+                        <figure>
+                            <img src="img/figure.png" alt="seo" id="seoimg" style="
                          border: 2px solid black; width: 400px;">
-                        <figcaption> Fig.1 - Il ruolo del SEO</figcaption>
-                    </figure>
+                            <figcaption> Fig.1 - Il ruolo del SEO</figcaption>
+                        </figure>
+                    </div>
                     <div class="card">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur tempore dolores id
-                        distinctio illo.Ea aspernatur exercitationem temporibus neque eum, unde a, reiciendis soluta
-                        illum odio minima sequi dolor delectus!
-                </article>
+                        <article>
+                            <q> Lorem ipsum dolor,</q> sit amet consectetur adipisicing elit. Consequuntur tempore
+                            dolores id
+                            distinctio illo.Ea aspernatur exercitationem temporibus neque eum, unde a, reiciendis soluta
+                            illum odio minima sequi dolor delectus!
+                        </article>
+                    </div>
             </div>
+
+            <hr>
+
+            <h3> Elementi di Formattazione InLine </h3>
+            <dl>
+                <dt> <mark> Scritta Speculare</mark> </dt>
+                <dd> <bdo dir="rtl"> da destra a Sinistra </bdo> </dd>
+                <br>
+                <dt> <mark> Testo italic </mark> </dt>
+                <dd><em> Semantico </em> </dd>
+                <dd><i> Non Semantico </i> </dd>
+                <br>
+                <dt> <mark> Testo in Grassetto</mark></dt>
+                <dd><strong>Testo Grassetto semantico </strong> </dd>
+                <dd><b>Testo Grassetto non semantico </b> </dd>
+
+            </dl>
+            <div>
+                <pre>
+            <span style="color: blueviolet;"> Lorem ipsum dolor sit amet,</span> 
+            consectetur adipisicing elit.
+            Ipsam, vitae hic! Nam quasi debitis beatae architecto 
+            doloremque nostrum quibusdam facere vero,
+            fugiat quaerat praesentium odio perspiciatis sunt? 
+            Alias, debitis consectetur. 
+ </pre>
+                <br>
+                Scorciatoie Utili in Visual Studio
+
+                <ol>
+                    <li> <kbd> Ctrl + K + F </kbd> Formattazione Automatica </li>
+                    <li> <kbd> Ctrl + K + c </kbd> Commentare una selezione </li>
+                    <li> <kbd> Ctrl + K + u </kbd> Deccommentare una selezione </li>
+
+
+                </ol>
+            </div>
+            <div>
+                <h4> Elementi </h4>
+                <p>
+                    L'elemento <code> ruby </code> è usato per dare in forma visualizzabile la pronuncia di un
+                    determinato carattere o parola. Viene utilizzato insieme a <code> rt </code> e <code> rp </code>.
+                    Spesso si usa per la lingua asiatica.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Il Tag <code> data </code> viene utilizato per dare un determinato valore ad un elemento, per far si
+                    che venga riconosciuto, ad esempio, da JavaScript, oppure ad un capitolo se si tratta di video.
+                </p>
+            </div>
+            <div>
+                <p> L'elemento <code> samp </code> viene utilizzato soprattutto per mostrare un messaggio Output del pc,
+                    ad esempio <br>
+                    <samp> Sorry, File non found </samp>
+                </p>
+
+                <p>
+                    L'elemento <code> s </code>serve a <s> barrare </s> il testo, come per smarcarlo, esattamente come
+                    <code> del </code> che serve invece a cancellare una voce. Da non
+                    confondere con l'elemento <code> u </code> fortemente<u> sconsigliato</u>, a causa della confusione
+                    che l'utente potrebbe fare, pensando ad un Link.
+                </p>
+            </div>
+            <div>
+                <h3>L'elemento Var</h3>
+
+                <p>L'area del triangolo è: 1/2 x <var>b</var> x <var>h</var>, dove <var>b</var> è la base, e
+                    <var>h</var> è l'altezza.
+                </p>
+            </div>
+
+            <div>
+                <details>
+                    <summary> Se vuoi sapere altre formule geometriche: </summary>
+                    <p> <a href="https://www.matematika.it/public/allegati/45/04_06_Area_triangolo_1_3.pdf"> il sito
+                            della Matematika </a> </p>
+                </details>
+            </div>
+            <br><br>
+
+            <!-- <div>
+                <p>Clicca sul pulsante per mostrare delle immagini.</p>
+
+                <button onclick="showContent()">Mostra le immagini </button>
+
+                <template>
+                    <h2>Computer</h2>
+                    <img src="img/figure.png" width="300" height="100">
+                </template>
+
+                <script>
+                    function showContent() {
+                        let temp = document.getElementsByTagName("template")[0];
+                        let clon = temp.content.cloneNode(true);
+                        document.body.appendChild(clon);
+                    }
+                </script>
+            </div> -->
+
+            <dialog open> Questa è una finestra di dialogo </dialog>
+
+
+
+
+        </main>
     </div>
-
-    <hr>
-
-    <h3> Lista Descrittiva </h3>
-    <dl>
-        <dt> <b> Primo Elemento </b> </dt>
-        <dd><em> Descrizione dell elemento </em> </dd>
-        <dt> <strong> Secondo Elemento </strong> </dt>
-        <dd><i>Descrizione dell elemento </i> </dd>
-    </dl>
-
-
-
-
-
-
-    <div>
-        <p>
-            <span style="color: blueviolet;"> Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit.
-            Ipsam, vitae hic! Nam quasi debitis beatae architecto doloremque nostrum quibusdam facere vero,
-            fugiat quaerat praesentium odio perspiciatis sunt? Alias, debitis consectetur. <br>
-
-            Lista ordinata
-        </p>
-        <ol>
-            <li> Elemento numero uno </li>
-            <li> Elemento numero due </li>
-            <li> Elemento numero tre </li>
-            <li> Elemento numero quattro </li>
-        </ol>
+    <div id="footer-side">
+        <footer>
+            <address> Via Torino 456r, Genova 16166 Ge </address>
+            <p> Copiright &#0169 2023 </p>
+        </footer>
     </div>
-
-
-
-
-
-    </main>
-    </div>
-    <footer>
-        <address> Via Torino 456r, Genova 16166 Ge</address>
-    </footer>
 </body>
 
 </html>

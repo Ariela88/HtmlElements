@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/HtmlElements">  -->
+    <title>Elementi dell'HTML</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka&family=Monoton&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            height: 100%;
+            width: auto;
+        }
+
+
+        aside {
+            display: block;
+            overflow: scroll;
+            float: inline-start;
+            flex-direction: column;
+            background-color: darksalmon;
+            padding: 10px 20px 5px 0px;
+        }
+
+
+        #footer-side {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            position: absolute;
+
+        }
+
+        #logo {
+            font-family: 'Monoton', cursive;
+            font-size: 50px;
+            display: flex;
+            width: fit-content;
+            background-color: rgb(242, 248, 160);
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            float: right;
+            justify-content: right;
+            background-color: rgb(242, 248, 160);
+            color: black;
+            width: 100%;
+            padding-right: 20px;
+        }
+
+        header {
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html"> HTML</a> </div>
+        <nav>
+            <menu>
+
+                <span><button> Cerca nel sito </button><input type="search"> </span>
+            </menu>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <aside>
+            <ul>
+                <li> <a href="gallery.html"> Elementi Media </a> </li>
+                <li> <a href="form.html"> Form ed Input </a></li>
+            </ul>
+        </aside>
+
+        <div class="container">
+
+            <div>
+                <img src="img/map-image.png" usemap="#pcdouble">
+                <map name="image-map" id="pcdouble">
+                    <area target="_blank" alt="clicca per aprire la home" title="clicca per aprire la home"
+                        href="index.html" coords="303,131,303,300,593,300,592,132" shape="poly">
+                </map>
+            </div>
+
+            <div>
+                <video src="" controls autoplay muted></video>
+            </div>
+            <div>
+                <audio controls>
+                    <source src="audio.ogg" type="audio/ogg">
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div>
+                <iframe src="https://ariela88.github.io/BioWebSite" title="Il mio primo sito Web" width="500px">
+                </iframe>
+            </div>
+            <div>
+                <h3> Prova a ridimensionare la finestra di Navigazione</h3>
+                <picture>
+                    <source media="(min-width:850px)" srcset="img/image.jpg">
+                    <source media="(min-width:465px)" srcset="img/code.jpg">
+                    <img src="img/code.jpg" alt="Code" style="width:auto;">
+                </picture>
+            </div>
+            <div>
+                <svg width="500" height="200" style="margin: 30px;">
+                    <rect width="500" height="200" style="fill:hotpink;stroke-width:10;stroke:rgb(0,0,0)" /> Il tuo
+                    broweser potrebbe non supportare le immagini SVG
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-side">
+        <footer>
+            <address> Via Torino 456r, Genova 16166 Ge </address>
+            <p> Copiright &#0169 2023 </p>
+        </footer>
+    </div>
+</body>
+
+</html>
