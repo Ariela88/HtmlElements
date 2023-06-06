@@ -22,10 +22,11 @@
 
 
         aside {
-            display: block;
+            float: left;
             overflow: scroll;
-            float: inline-start;
-            flex-direction: column;
+            height: 700px;
+            display: block;
+            font-family: 'comic sans ms';
             background-color: darksalmon;
             padding: 10px 20px 5px 0px;
         }
@@ -71,6 +72,11 @@
         header {
             display: flex;
         }
+
+        .container {
+            width: 800px;
+
+        }
     </style>
 </head>
 
@@ -91,13 +97,16 @@
 
         <aside>
             <ul>
+                <li> <a href="index.html"> Home Page </a> </li>
+                <br>
                 <li> <a href="gallery.html"> Elementi Media </a> </li>
+                <br>
                 <li> <a href="form.html"> Form ed Input </a></li>
             </ul>
         </aside>
 
         <div class="container">
-
+            <br><br>
             <div class="data-form">
                 <h3>Inserisci i tuoi dati </h3>
 
@@ -127,10 +136,10 @@
                             <option value="Studente">Studente </option>
                             <option value="Disoccupato">Disoccupato</option>
                         </select><br><br>
-                        <form >Altezza cm <br> 
-                            <input type="range" id="height" value="200"> 
+                        <form>Altezza cm <br>
+                            <input type="range" id="height" value="200">
                             <output name="x" for="a b"></output>
-                            </form> <br> <br>
+                        </form> <br> <br>
 
                         <label for="sendcomment"> Scrivi un Commento </label><br><br>
                         <textarea> Scrivi qui... </textarea><br><br>
@@ -142,8 +151,9 @@
                     </fieldset>
                 </form>
             </div>
+            <br><br><br>
 
-            
+
 
             <div id="footer-side">
                 <footer>

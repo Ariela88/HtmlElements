@@ -22,10 +22,11 @@
 
 
         aside {
-            display: block;
+            float: left;
             overflow: scroll;
-            float: inline-start;
-            flex-direction: column;
+            height: 1700px;
+            display: block;
+            font-family: 'comic sans ms';
             background-color: darksalmon;
             padding: 10px 20px 5px 0px;
         }
@@ -71,6 +72,9 @@
             display: flex;
         }
 
+        .container {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -91,7 +95,9 @@
 
         <aside>
             <ul>
-                <li> <a href="gallery.html"> Elementi Media </a> </li>
+                <li> <a href="index.html"> Home Page </a> </li>
+                <br>
+                <li> <a href="gallery.html"> Elementi Media </a> </li> <br>
                 <li> <a href="form.html"> Form ed Input </a></li>
             </ul>
         </aside>
@@ -99,34 +105,39 @@
         <div class="container">
 
             <div>
-                <img src="img/map-image.png" usemap="#pcdouble">
+                <img src="img/map-image.png" usemap="#pcdouble" width="auto">
                 <map name="image-map" id="pcdouble">
                     <area target="_blank" alt="clicca per aprire la home" title="clicca per aprire la home"
                         href="index.html" coords="303,131,303,300,593,300,592,132" shape="poly">
                 </map>
             </div>
+            <hr>
 
             <div>
                 <video src="" controls autoplay muted></video>
             </div>
+            <hr>
             <div>
                 <audio controls>
                     <source src="audio.ogg" type="audio/ogg">
                     <source src="audio.mp3" type="audio/mpeg">
                 </audio>
             </div>
+            <hr>
             <div>
                 <iframe src="https://ariela88.github.io/BioWebSite" title="Il mio primo sito Web" width="500px">
                 </iframe>
             </div>
+            <hr>
             <div>
                 <h3> Prova a ridimensionare la finestra di Navigazione</h3>
                 <picture>
                     <source media="(min-width:850px)" srcset="img/image.jpg">
                     <source media="(min-width:465px)" srcset="img/code.jpg">
-                    <img src="img/code.jpg" alt="Code" style="width:auto;">
+                    <img src="img/code.jpg" alt="Code" style="width:auto;" width="auto">
                 </picture>
             </div>
+            <hr>
             <div>
                 <svg width="500" height="200" style="margin: 30px;">
                     <rect width="500" height="200" style="fill:hotpink;stroke-width:10;stroke:rgb(0,0,0)" /> Il tuo
