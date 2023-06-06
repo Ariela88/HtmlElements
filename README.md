@@ -4,7 +4,7 @@ il Tag <base> non l'ho utilizzato ma ho capito a cosa serve, ossia citare un sit
 
 il tag hgroup non è molto chiara la sua funzione e il suo utilizzo, quindi ho lasciato stare.
 
-il tag bdi ho più o meno capito che è simile al tag bdo, ossia per lingue in cui la pronuncia ha bisogno di essere compresa atraverso caratteri speciali, ad esempio quella cinese.
+il tag bdi ho più o meno capito che è simile al tag bdo, ossia per lingue in cui la scrittura è di andamento e visualizzazione diversa dalla nostra
 
 il tag wbr non mi è per nulla chiaro l'utilizzo
 
