@@ -1,4 +1,4 @@
-<!-- # HtmlElements
+# HtmlElements
 
 il Tag <base> non l'ho utilizzato ma ho capito a cosa serve, ossia citare un sito web inerente a cio che si sta scrivendo nel proprio codice.
 
@@ -17,4 +17,4 @@ il tag noscript ho capito che serve nel caso l'utente non supportasse Javascript
 
 il tag meter ho capito a cosa serve ma non sono riuscita ad utilizzarlo
 
-il tag slot non sono riuscita ad utilizzarlo  -->
+il tag slot non sono riuscita ad utilizzarlo 
